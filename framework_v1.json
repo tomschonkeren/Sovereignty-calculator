@@ -1,0 +1,1903 @@
+{
+    "model_version": "SEAL-v1.0",
+    "objectives": [
+        {
+            "id": "SOV-1",
+            "name": "Strategic Sovereignty",
+            "weight": 0.2,
+            "criteria": [
+                {
+                    "id": "SOV-1-C01",
+                    "title": "EU/EEA legal entity control",
+                    "description": "Ensuring that ultimate decision-making authority resides within EU jurisdiction.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Entirely outside the EU",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mostly outside the EU",
+                            "score": 41.67,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mostly within the EU",
+                            "score": 83.34,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Entirely within the EU",
+                            "score": 125.01,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C02",
+                    "title": "Change of Control Risk",
+                    "description": "Evaluating the likelihood of takeover or transfer to non-sovereign owners.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Very likely",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Likely takeover by or transfer to a non-EU sovereign entity",
+                            "score": 31.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Somewhat likely takeover by or transfer to a non-EU sovereign entity",
+                            "score": 62.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Unlikely takeover by or transfer to a non-EU sovereign entity",
+                            "score": 93.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Very unlikely",
+                            "score": 125,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C03",
+                    "title": "Control Over Roadmap",
+                    "description": "Measuring the capacity of EU stakeholders to shape provider technological and service evolution.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No influence possible",
+                            "score": 0,
+                            "seal": 2
+                        },
+                        {
+                            "level": 2,
+                            "label": "Through voice-of-customer public channels",
+                            "score": 41.67,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Governance bodies exist with EU actor participation",
+                            "score": 83.34,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Full influence of EU actors",
+                            "score": 125.01,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C04",
+                    "title": "Financial independence from non-EU capital",
+                    "description": "Degree to which the provider relies on EU-based financing rather than external capital.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Almost entirely relying on non-EU funding",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mostly relying on non-EU funding",
+                            "score": 31.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Balanced mix of EU and non-EU funding",
+                            "score": 62.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Majority of funding is EU-based",
+                            "score": 93.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Entirely EU-based funding",
+                            "score": 125,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C05",
+                    "title": "EU economic contribution",
+                    "description": "Extent of investment, jobs and value creation within EU/EEA.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Minimal",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Some",
+                            "score": 31.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Balanced EU/non-EU",
+                            "score": 62.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Majority in the EU",
+                            "score": 93.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Fully in the EU",
+                            "score": 125,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C06",
+                    "title": "Participation in EU strategic programs",
+                    "description": "Involvement in initiatives such as IPCEI-CIS, Horizon Europe or Gaia-X.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No clear participation",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Limited participation",
+                            "score": 31.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Active participant in strategic projects",
+                            "score": 62.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Major contributor to strategic projects",
+                            "score": 93.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Strategic projects depend on contractor involvement",
+                            "score": 125,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C07",
+                    "title": "Alignment with EU industrial strategies",
+                    "description": "Consistency with digital, green and industrial sovereignty objectives defined at EU level.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No evidence exists",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Existing action plan",
+                            "score": 41.67,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Measured achievements and dedicated governance",
+                            "score": 83,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Bold ambition and dedicated means",
+                            "score": 125.01,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-1-C08",
+                    "title": "Resilience to Cut-off",
+                    "description": "Ability to sustain secure operations even if vendor support is withdrawn or disrupted.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Immediate shutdown of the service is expected",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Service would likely stop but with delay",
+                            "score": 31.25,
+                            "seal": 0
+                        },
+                        {
+                            "level": 3,
+                            "label": "Can continue temporarily based on contractual agreement",
+                            "score": 62.5,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Ability to source alternative suppliers or internalise key functions",
+                            "score": 93.75,
+                            "seal": 2
+                        },
+                        {
+                            "level": 5,
+                            "label": "Full autonomy and continuity",
+                            "score": 125,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-2",
+            "name": "Legal & Jurisdictional Sovereignty",
+            "weight": 0.1,
+            "criteria": [
+                {
+                    "id": "SOV-2-C01",
+                    "title": "Primary Legal Jurisdiction",
+                    "description": "The national legal system governing the provider's operations and contracts.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Non-EU only",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mixed EU/non-EU",
+                            "score": 84,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Exclusively EU law",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-2-C02",
+                    "title": "Extraterritorial Laws",
+                    "description": "Degree of exposure to non-EU laws with cross-border reach.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Fully exposed to non-EU laws",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mitigation clauses, exposure remains",
+                            "score": 41.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "EU subsidiary with contractual protections",
+                            "score": 83.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "Legal structures shielding from foreign law",
+                            "score": 125.25,
+                            "seal": 2
+                        },
+                        {
+                            "level": 5,
+                            "label": "Verified legal immunity, non-EU laws unenforceable",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-2-C03",
+                    "title": "Data Access Pathways",
+                    "description": "Existence of legal, contractual, or technical channels through which non-EU authorities could compel access to data or systems.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Non-EU authorities can compel access without customer notification",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Non-EU authorities can compel access without notification in specific cases",
+                            "score": 41.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Access possible with customer notification in all cases",
+                            "score": 83.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "Requests are disputed and customers are notified",
+                            "score": 125.25,
+                            "seal": 1
+                        },
+                        {
+                            "level": 5,
+                            "label": "Requests are always rejected",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-2-C04",
+                    "title": "Export Control Restrictions",
+                    "description": "Applicability of international regimes such as ITAR or EAR.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Restrictions exist towards an EU Member State",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Restrictions exist towards EU citizens or international organisations",
+                            "score": 41.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "More than 50% of revenues are generated in the EU",
+                            "score": 83.5,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Part of the offer cannot be exposed to restrictions towards EU Member States",
+                            "score": 125.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Part of the offer cannot be exposed to restrictions towards EU Member States or international organisations",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-2-C05",
+                    "title": "Origin of IP",
+                    "description": "Location of intellectual property creation, registration and development.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Entirely outside the EU",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mostly outside the EU",
+                            "score": 41.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mixed within/outside the EU",
+                            "score": 83.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Mostly within the EU",
+                            "score": 125.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Fully within the EU",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-2-C06",
+                    "title": "IP Holder Jurisdiction",
+                    "description": "Legal jurisdiction where IP rights are owned and enforced.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Non-EU law, one single country",
+                            "score": 0,
+                            "seal": 3
+                        },
+                        {
+                            "level": 2,
+                            "label": "Non-EU law, mixed non-EU countries",
+                            "score": 41.75,
+                            "seal": 3
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mixed law, some EU",
+                            "score": 83.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "EU law with exceptions",
+                            "score": 125.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Fully under EU law",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-3",
+            "name": "Data & AI Sovereignty",
+            "weight": 0.1,
+            "criteria": [
+                {
+                    "id": "SOV-3-C01",
+                    "title": "Customer control over encryption keys",
+                    "description": "Degree of customer ownership and control over encryption keys.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Provider only",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Primarily the provider but not exclusively",
+                            "score": 50,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Shared - provider has override keys",
+                            "score": 100,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Customer primary control but provider can read some or all data",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Customer exclusive control - provider cannot read the data",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-3-C02",
+                    "title": "Transparent data flows & access logs",
+                    "description": "Visibility into when, where, and by whom data is accessed, including auditability of AI model usage.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No data usage logs",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Basic logs incomplete",
+                            "score": 50,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Logs exist but not real-time or controlled by customer",
+                            "score": 100,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Full customer-controlled visibility but not real time",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Real-time customer oversight and independent auditability",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-3-C03",
+                    "title": "Secure deletion & proof of erasure",
+                    "description": "Mechanisms guaranteeing irreversible removal of data, with verifiable evidence.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Irreversible deletion neither guaranteed nor verifiable",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Manual confirmation only",
+                            "score": 50,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Internal validation based on policies",
+                            "score": 100,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "Deletion technically verified with access logs",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Systematically enforced and independently verified",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-3-C04",
+                    "title": "Data location strictly in EU/EEA",
+                    "description": "Strict confinement of storage and processing to European jurisdictions with no fallback to third countries.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Location largely unknown and includes third countries",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Partly in EU, significant reliance on third countries",
+                            "score": 50,
+                            "seal": 0
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mainly in EU, some third-country usage with safeguards",
+                            "score": 100,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "EU by default with tightly controlled exceptions",
+                            "score": 150,
+                            "seal": 1
+                        },
+                        {
+                            "level": 5,
+                            "label": "Exclusively in EU with no third-country fallback",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-3-C05",
+                    "title": "AI services",
+                    "description": "Extent to which AI models and data pipelines are developed, trained, hosted, and governed under EU control.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Non-EU or undetermined: black-box AI, restricted chips",
+                            "score": 0,
+                            "seal": 2
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mostly non-EU dependencies",
+                            "score": 50,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mixed control with alternatives",
+                            "score": 100,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "EU-led AI, foreign accelerators",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-origin models and chips with no non-EU dependencies",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-4",
+            "name": "Operational Sovereignty",
+            "weight": 0.15,
+            "criteria": [
+                {
+                    "id": "SOV-4-C01",
+                    "title": "Portability & Interoperability",
+                    "description": "Ease of migrating workloads or integrating with alternative EU-controlled solutions without vendor lock-in.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No guarantees for data or workload portability",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Best-effort export and portability",
+                            "score": 41.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Standard documented export methods available",
+                            "score": 83.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Formal migration services available",
+                            "score": 125.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Solution already deployed on sovereign infrastructure",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-4-C02",
+                    "title": "Ability to Operate Without Foreign Dependencies",
+                    "description": "Capacity for EU operators to manage, maintain, and support technology without requiring non-EU vendor involvement.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Critical operational services delivered by non-EU teams",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Operational services partially sourced within EU",
+                            "score": 41.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Responsibilities balanced between EU and non-EU teams",
+                            "score": 83.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Operational services predominantly delivered by EU teams",
+                            "score": 125.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Entire technology stack managed by fully EU-based teams",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-4-C03",
+                    "title": "Skill Availability",
+                    "description": "Existence of an EU-based talent pool with the expertise to operate and sustain the service.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Global team, mainly non-EU",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mixed, majority outside EU",
+                            "score": 41.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Majority EU, escalation abroad",
+                            "score": 83.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "All EU staff",
+                            "score": 125.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "100% EU staff plus clearance",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-4-C04",
+                    "title": "Support Channels",
+                    "description": "Assurance that operational support is delivered from within the EU and subject exclusively to EU/EEA legal frameworks.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Support team global, majority outside EU",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mixed team, majority outside EU",
+                            "score": 41.75,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Majority in EU but escalations handled by non-EU teams",
+                            "score": 83.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "All support staff located in EU",
+                            "score": 125.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "All support staff in EU and security-cleared",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-4-C05",
+                    "title": "Documentation & Knowledge Transfer",
+                    "description": "Availability of full technical documentation, source code, and operational know-how enabling long-term autonomy.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Documentation managed outside EU",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "EU storage optional but not enforced",
+                            "score": 41.75,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "EU primary with non-EU fallback",
+                            "score": 83.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "EU-only primary repositories",
+                            "score": 125.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-only end-to-end including backups and administration",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-4-C06",
+                    "title": "Subcontractor & Suppliers Jurisdiction",
+                    "description": "Location and legal control of critical suppliers or subcontractors involved in service delivery.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Immediate shutdown of service expected",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Service would likely stop but with delay",
+                            "score": 41.75,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Can continue temporarily under contractual agreement",
+                            "score": 83.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Alternative suppliers or internalisation possible",
+                            "score": 125.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Full autonomy and continuity",
+                            "score": 167,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-5",
+            "name": "Supply Chain Sovereignty",
+            "weight": 0.1,
+            "criteria": [
+                {
+                    "id": "SOV-5-C01",
+                    "title": "Origin of Components",
+                    "description": "Geographic source of key physical parts.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No disclosure",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Partial disclosure",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Transparent with exceptions",
+                            "score": 71.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Full transparency",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-certified provenance",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-5-C02",
+                    "title": "Manufacturing Location",
+                    "description": "Countries where hardware is manufactured or assembled.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Fully foreign, black box",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Foreign origin, partial disclosure",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mixed sourcing, EU audit rights",
+                            "score": 71.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Built by EU teams on basis of foreign code",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Exclusively designed and built by EU teams",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-5-C03",
+                    "title": "Embedded Code Provenance",
+                    "description": "Jurisdiction and provenance of embedded code controlling hardware and firmware.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No disclosure",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Partial disclosure",
+                            "score": 35.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Transparent with exceptions",
+                            "score": 71.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Full transparency",
+                            "score": 107.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-certified provenance",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-5-C04",
+                    "title": "Origin of Software",
+                    "description": "Where and by whom software is architected and programmed.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Fully foreign origin with no transparency",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Foreign origin with partial disclosure",
+                            "score": 35.75,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Core parts designed and maintained by EU teams",
+                            "score": 71.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Large majority designed and maintained by EU teams",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Exclusively designed and maintained by EU teams",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-5-C05",
+                    "title": "Software Packaging & Distribution",
+                    "description": "Location and jurisdiction governing software packaging, distribution and updates.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Non-EU control and execution",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "EU control, non-EU execution",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Non-EU control, EU execution",
+                            "score": 71.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "EU control and execution",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU control and EU policy gates",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-5-C06",
+                    "title": "Single Point of Dependency",
+                    "description": "Degree of reliance on non-EU vendors, facilities or proprietary technologies.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Only non-EU vendors or facilities involved",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Mostly non-EU vendors involved in critical services",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Few non-EU vendors involved or transparently documented",
+                            "score": 71.5,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Few non-EU vendors involved in non-critical services",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "No dependency on non-EU vendor or facility",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-5-C07",
+                    "title": "Supply Chain Transparency",
+                    "description": "Visibility into suppliers and sub-suppliers including audit rights.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No suppliers can be audited",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Some suppliers can be audited",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Critical suppliers can be audited",
+                            "score": 71.5,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Most suppliers can be audited",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "All suppliers can be audited",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-6",
+            "name": "Technology Sovereignty",
+            "weight": 0.15,
+            "criteria": [
+                {
+                    "id": "SOV-6-C01",
+                    "title": "Interoperability & Open Interfaces",
+                    "description": "Ability to integrate through well-documented and non-proprietary APIs or protocols.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Closed proprietary interfaces",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Restricted proprietary APIs",
+                            "score": 50,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mixed partial openness",
+                            "score": 100,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Standards-based and broadly compatible",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Open-by-default with portability",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-6-C02",
+                    "title": "Open Standards Compliance",
+                    "description": "Extent to which the solution adheres to publicly governed and widely adopted standards.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No open standards",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Ad hoc use",
+                            "score": 50,
+                            "seal": 0
+                        },
+                        {
+                            "level": 3,
+                            "label": "Partial core adoption",
+                            "score": 100,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Policy for most core services",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Policy for all core services",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-6-C03",
+                    "title": "Open Source Availability",
+                    "description": "Availability under open licences with rights to audit, modify and redistribute.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Fully closed source",
+                            "score": 0,
+                            "seal": 2
+                        },
+                        {
+                            "level": 2,
+                            "label": "Source available for review only",
+                            "score": 50,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Open source with centralised governance",
+                            "score": 100,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Open source with significant EU contributions",
+                            "score": 150,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Fully open source with independent or EU governance",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-6-C04",
+                    "title": "Service Architecture Transparency",
+                    "description": "Visibility into architecture, data flows and dependencies.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No insight provided",
+                            "score": 0,
+                            "seal": 2
+                        },
+                        {
+                            "level": 2,
+                            "label": "Insight accessible during audits",
+                            "score": 50,
+                            "seal": 2
+                        },
+                        {
+                            "level": 3,
+                            "label": "Some public insight exists",
+                            "score": 100,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Large corpus of public insight exists",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Customers can contribute to enhance the service",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-6-C05",
+                    "title": "HPC Sovereignty",
+                    "description": "Degree of European independence in high-performance computing capabilities.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Imported black-box HPC computers",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "EU-hosted, foreign stack",
+                            "score": 50,
+                            "seal": 3
+                        },
+                        {
+                            "level": 3,
+                            "label": "Co-designed or integrated in EU",
+                            "score": 100,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "EU processor IP, non-EU fabs",
+                            "score": 150,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU design, EU fab and EU operations",
+                            "score": 200,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-7",
+            "name": "Security & Compliance Sovereignty",
+            "weight": 0.15,
+            "criteria": [
+                {
+                    "id": "SOV-7-C01",
+                    "title": "Security Certification",
+                    "description": "Attainment of EU and internationally recognised certifications.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "EAL0",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "EAL1",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "EAL2",
+                            "score": 71.5,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "EAL3",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EAL4-5",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-7-C02",
+                    "title": "EU Regulatory Compliance",
+                    "description": "Demonstrable adherence to GDPR, NIS2, DORA and other EU frameworks.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No evident adherence",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Limited compliance",
+                            "score": 35.75,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Moderate compliance",
+                            "score": 71.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Partial compliance to most regulations",
+                            "score": 107.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Fully compliant and independently audited",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-7-C03",
+                    "title": "EU-based SOC & Incident Handling",
+                    "description": "Security operations centres and response teams operating under EU jurisdiction.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "SOC and incident response outside EU",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Hybrid EU/non-EU model",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Primary SOC in EU with non-EU escalation",
+                            "score": 71.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "Entire lifecycle handled in EU",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-based teams with ENISA participation",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-7-C04",
+                    "title": "Control over Security Monitoring",
+                    "description": "Ability to oversee security logs, alerts and monitoring functions.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Provider retains full control",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Customers receive periodic reports",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Basic customer monitoring portal",
+                            "score": 71.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "Full direct access with EU-stored logs",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Immutable EU-only logs",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-7-C05",
+                    "title": "Disclosure of Incidents",
+                    "description": "Transparent and EU-compliant reporting of breaches and vulnerabilities.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No compliance",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Limited compliance",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Moderate compliance",
+                            "score": 71.5,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Partial compliance",
+                            "score": 107.25,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "Full compliance",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-7-C06",
+                    "title": "Maintenance Autonomy",
+                    "description": "Ability to develop, test and apply security patches independently.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No autonomy",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Limited autonomy",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Moderate autonomy",
+                            "score": 71.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "High autonomy",
+                            "score": 107.25,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Full autonomy",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-7-C07",
+                    "title": "Auditability",
+                    "description": "Capacity for independent entities to perform security and compliance audits.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No access beyond vendor",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Limited access",
+                            "score": 35.75,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Partial control by independent entities",
+                            "score": 71.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 4,
+                            "label": "High control to request data",
+                            "score": 107.25,
+                            "seal": 1
+                        },
+                        {
+                            "level": 5,
+                            "label": "Full audit control by independent entities",
+                            "score": 143,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SOV-8",
+            "name": "Environmental Sustainability",
+            "weight": 0.05,
+            "criteria": [
+                {
+                    "id": "SOV-8-C01",
+                    "title": "Energy Efficiency",
+                    "description": "Adoption of energy-efficient infrastructure and measurable improvement targets.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "PUE > 3",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "PUE < 3",
+                            "score": 62.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "PUE < 1.5 + roadmap",
+                            "score": 125,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "PUE < 1.3",
+                            "score": 187.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "PUE < 1.2 EU verified",
+                            "score": 250,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-8-C02",
+                    "title": "Hardware Reuse & Recycling",
+                    "description": "Circular economy practices ensuring reuse and responsible end-of-life treatment.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No policy",
+                            "score": 0,
+                            "seal": 0
+                        },
+                        {
+                            "level": 2,
+                            "label": "Circular economy EU-aligned",
+                            "score": 62.5,
+                            "seal": 0
+                        },
+                        {
+                            "level": 3,
+                            "label": "Documented programme",
+                            "score": 125,
+                            "seal": 3
+                        },
+                        {
+                            "level": 4,
+                            "label": "Advanced circular economy programme",
+                            "score": 187.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-certified lifecycle",
+                            "score": 250,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-8-C03",
+                    "title": "Environmental Impact Reporting",
+                    "description": "Measurement and disclosure of carbon emissions, water usage and sustainability indicators.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "No reporting",
+                            "score": 0,
+                            "seal": 1
+                        },
+                        {
+                            "level": 2,
+                            "label": "Detailed EU methodology",
+                            "score": 62.5,
+                            "seal": 1
+                        },
+                        {
+                            "level": 3,
+                            "label": "Annual report",
+                            "score": 125,
+                            "seal": 2
+                        },
+                        {
+                            "level": 4,
+                            "label": "Detailed EU methodology and reporting",
+                            "score": 187.5,
+                            "seal": 3
+                        },
+                        {
+                            "level": 5,
+                            "label": "EU-audited reporting",
+                            "score": 250,
+                            "seal": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "SOV-8-C04",
+                    "title": "Energy Supplies",
+                    "description": "Use of renewable or low-carbon energy supplies.",
+                    "allow_na": true,
+                    "binding": false,
+                    "answers": [
+                        {
+                            "level": 1,
+                            "label": "Non-traceable",
+                            "score": 0,
+                            "seal": 4
+                        },
+                        {
+                            "level": 2,
+                            "label": "Only EU energy supplies",
+                            "score": 62.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 3,
+                            "label": "Mix of EU and non-EU supplies",
+                            "score": 125,
+                            "seal": 4
+                        },
+                        {
+                            "level": 4,
+                            "label": "Only EU energy supplies with verification",
+                            "score": 187.5,
+                            "seal": 4
+                        },
+                        {
+                            "level": 5,
+                            "label": "Only green EU energy supplies",
+                            "score": 250,
+                            "seal": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
